@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_360dp"
+    android:layout_height="@dimen/_175dp"
+    app:cardCornerRadius="@dimen/_8dp"
+    app:cardElevation="@dimen/_4dp"
+    app:contentPaddingLeft="@dimen/_16dp"
+    app:contentPaddingTop="@dimen/_16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_16sp"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/subTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14sp"
+                tools:text="@tools:sample/full_names" />
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sp"
+                tools:text="@tools:sample/full_names" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/actionBtn"
+            android:layout_width="@dimen/_180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:backgroundTint="@color/main_color"
+            android:layout_gravity="start|bottom"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:text="@tools:sample/full_names" />
+
+        <ImageView
+            android:id="@+id/topIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_done" />
+
+        <ImageView
+            android:id="@+id/bottomIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/ic_box" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

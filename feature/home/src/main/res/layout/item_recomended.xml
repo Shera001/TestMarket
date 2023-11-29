@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/recomended"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        app:tabIndicatorColor="@color/main_color"
+        app:tabIndicatorFullWidth="true"
+        android:backgroundTint="@android:color/transparent"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/main_color"
+        app:tabTextColor="@color/gray" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/productVp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -21,12 +21,19 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            isDebuggable = false
+        }
     }
 }
 
 dependencies {
 
     implementation(project(":feature:home"))
+    implementation(project(":feature:catalog"))
+    implementation(project(":feature:basket"))
+    implementation(project(":feature:favorite"))
+    implementation(project(":feature:account"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -38,4 +45,6 @@ dependencies {
 
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+
+    implementation(libs.androidx.splashscreen)
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_360dp"
+    android:layout_height="@dimen/_175dp"
+    app:cardCornerRadius="@dimen/_8dp">
+
+    <ImageView
+        android:id="@+id/bannerIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/discount1" />
+
+    <View
+        android:id="@+id/gradientView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/articleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:backgroundTint="#CCFFFFFF"
+        android:text="@string/article"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/smal_article"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp" />
+
+</androidx.cardview.widget.CardView>

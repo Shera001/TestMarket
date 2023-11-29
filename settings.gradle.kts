@@ -16,4 +16,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "TestMarket"
 include(":app")
+include(":core:model")
 include(":feature:home")
+include(":feature:catalog")
+include(":feature:basket")
+include(":feature:favorite")
+include(":feature:account")

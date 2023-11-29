@@ -3,11 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/menuHome">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/menuHome"
         android:name="testmarket.feature.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menuCatalog"
+        android:name="testmarket.feature.catalog.CatalogFragment"
+        android:label="CatalogFragment"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/menuBasket"
+        android:name="testmarket.feature.basket.BasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/menuFavorite"
+        android:name="testmarket.feature.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/menuAccount"
+        android:name="testmarket.feature.account.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/fragment_account" />
+
+
 </navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#FF7011</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#7B7B7B</color>
+    <color name="name_color">#14A23C</color>
+    <color name="home_bg_color">#F0F0F0</color>
+    <color name="blog_title_color">#14A23C</color>
+</resources>

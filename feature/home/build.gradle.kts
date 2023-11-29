@@ -1,6 +1,5 @@
 plugins {
     id("testmarket.android.feature")
-    alias(libs.plugins.kotlin.android)
 }
 
 android {

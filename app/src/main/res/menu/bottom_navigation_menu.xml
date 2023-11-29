@@ -19,7 +19,7 @@
             android:title="@string/favorite" />
         <item
             android:id="@+id/menuAccount"
-            android:icon="@drawable/ic_account"
+            android:icon="@drawable/ic_user"
             android:title="@string/account" />
     </group>
 </menu>

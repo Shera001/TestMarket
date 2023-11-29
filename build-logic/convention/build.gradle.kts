@@ -18,10 +18,6 @@ gradlePlugin {
             id = "testmarket.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
-        register("androidHilt") {
-            id = "testmarket.android.hilt"
-            implementationClass = "AndroidHiltConventionPlugin"
-        }
         register("androidLibrary") {
             id = "testmarket.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"

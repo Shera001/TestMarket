@@ -10,7 +10,6 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 apply("testmarket.android.library")
-                apply("testmarket.android.hilt")
             }
 
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
